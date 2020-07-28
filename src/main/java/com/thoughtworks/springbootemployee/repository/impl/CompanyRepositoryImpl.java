@@ -14,6 +14,7 @@ public class CompanyRepositoryImpl implements CompanyRepository {
 
     @Override
     public void addCompany(Company company) {
+        company.setEmployeesNumber(company.getEmployees().size());
         companyList.add(company);
     }
 
@@ -44,6 +45,7 @@ public class CompanyRepositoryImpl implements CompanyRepository {
             }
             if(!isEqual){
                 oldCompany.getEmployees().add(newEmployee);
+                oldCompany.setEmployeesNumber(company.getEmployees().size());
             }
         }
     }

@@ -7,6 +7,15 @@ public class Employee {
     private String name;
     private Integer age;
     private String gender;
+    private Integer salary;
+
+    public Integer getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Integer salary) {
+        this.salary = salary;
+    }
 
     public Integer getId() {
         return id;
