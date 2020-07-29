@@ -1,12 +1,10 @@
-package com.thoughtworks.springbootemployee.repository;
-
+package com.thoughtworks.springbootemployee.service;
 
 import com.thoughtworks.springbootemployee.entity.Company;
 
 import java.util.List;
 
-
-public interface CompanyRepository {
+public interface CompanyService {
     void addCompany(Company company);
 
     List<Company> getCompanies();
@@ -18,4 +16,5 @@ public interface CompanyRepository {
     Company getCompany(Integer companyId);
 
     List<Company> queryCompanyByPage(Integer page, Integer pageSize);
+
 }

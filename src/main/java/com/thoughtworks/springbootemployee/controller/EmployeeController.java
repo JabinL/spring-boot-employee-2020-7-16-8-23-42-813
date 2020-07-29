@@ -30,7 +30,7 @@ public class EmployeeController {
         employeeRepository.deleteEmployee(employeeId);
     }
 
-    @GetMapping()
+    @GetMapping()//TODO eligant
     public List<Employee> getEmployee(@RequestParam(value = "gender", required = false) String gender,
                                       @RequestParam(value = "page", required = false) Integer page,
                                       @RequestParam(value = "pageSize", required = false) Integer pageSize) {

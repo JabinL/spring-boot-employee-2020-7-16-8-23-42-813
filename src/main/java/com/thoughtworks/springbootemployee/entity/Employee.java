@@ -7,6 +7,7 @@ public class Employee {
     private String name;
     private Integer age;
     private String gender;
+    private Integer companyId;
     private Integer salary;
 
     public Integer getSalary() {
@@ -47,6 +48,14 @@ public class Employee {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public Integer getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(Integer companyId) {
+        this.companyId = companyId;
     }
 
     @Override
